@@ -1,0 +1,21 @@
+[package]
+name = "carbon-credit-oft"
+version = "0.1.0"
+description = "LayerZero V2 OFT for cross-chain carbon credit tokens"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "carbon_credit_oft"
+
+[features]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = { workspace = true }
+anchor-spl = { workspace = true }
+borsh = { workspace = true }
